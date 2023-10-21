@@ -33,24 +33,40 @@ const { title } = Astro.props;
 			<footer class="[grid-area:player] min-h-[100px]"></footer>
 		</div>
 	</body>
-</html>
-<style></style>
-<style>
-	#app {
-		display: grid;
-		grid-template-areas: 
+	<style></style>
+	<style>
+		#app {
+			display: grid;
+			grid-template-areas: 
 			"aside main main"
 			"player player player";
-		grid-template-columns: 350px 1fr;
-		grid-template-rows: 1fr auto;
-	}
+			grid-template-columns: 350px 1fr;
+			grid-template-rows: 1fr auto;
+		}
 </style>
 
 
 <style is:global>
-
+	
 	html {
 		font-family: system-ui, sans-serif;
 		background: #121212; 
 	}
+	
+	@font-face{
+		font-family: "CircularSdt";
+		src: url("/fonts/CircularStd-bold.woff2") format("woff2");
+		font-weight: 700;
+		font-style: normal;
+		font-display: swap;
+	}
+	
+	@font-face{
+		font-family: "CircularSdt";
+		src: url("/fonts/CircularStd-Black.woff") format("woff2");
+		font-weight: 900;
+		font-style: normal;
+		font-display: swap;
+	}
 </style>
+</html>
